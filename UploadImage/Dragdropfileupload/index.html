@@ -1,0 +1,23 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+ <head>
+  <title> Gmail file upload </title>
+  <script src="jquery-1.7.1.min.js"></script>
+  <script src="filereader.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+	<div id="dropbox">
+		<div class="text">
+			Drop Images Here
+		</div>
+	</div>
+	<span class="upload-progress"></span>
+	<div class="container"> 
+    <input type="file" id="fileElem" multiple="true" accept="image/*" onchange="handleFiles(this.files)"> 
+	<span style="font-size:14px;color: #1F6289;font-weight:bold;">Browse and select OR Drop file below</span> 
+
+  </div> 
+  </body>
+</html>
